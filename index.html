@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PARVATHAREDDY SUHITH REDDY - AI Engineer Portfolio</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+    <!-- Google Font: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+    <!-- Background Canvas for Three.js -->
+    <canvas id="bg-canvas"></canvas>
+
+    <main>
+
+        <!--
+        - #SIDEBAR
+        -->
+        <aside class="sidebar" data-sidebar>
+            <div class="sidebar-info">
+                <figure class="avatar-box">
+                    <img src="https://placehold.co/120x120/3d52d5/ffffff?text=SR" alt="Suhith Reddy Avatar" width="120">
+                </figure>
+                <div class="info-content">
+                    <h1 class="name" title="PARVATHAREDDY SUHITH REDDY">PARVATHAREDDY SUHITH REDDY</h1>
+                    <p class="title">AI Engineer & Innovator</p>
+                </div>
+            </div>
+            <div class="sidebar-info_more">
+                <ul class="contacts-list">
+                    <li class="contact-item">
+                        <div class="icon-box">
+                            <ion-icon name="mail-outline"></ion-icon>
+                        </div>
+                        <div class="contact-info">
+                            <p class="contact-title">Email</p>
+                            <a href="mailto:suhithreddy18@gmail.com" class="contact-link">suhithreddy18@gmail.com</a>
+                        </div>
+                    </li>
+                    <li class="contact-item">
+                        <div class="icon-box">
+                            <ion-icon name="phone-portrait-outline"></ion-icon>
+                        </div>
+                        <div class="contact-info">
+                            <p class="contact-title">Phone</p>
+                            <a href="tel:+918885450597" class="contact-link">+91 8885450597</a>
+                        </div>
+                    </li>
+                    <li class="contact-item">
+                        <div class="icon-box">
+                            <ion-icon name="location-outline"></ion-icon>
+                        </div>
+                        <div class="contact-info">
+                            <p class="contact-title">Location</p>
+                            <address>Chennai, India</address>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="social-list">
+                    <li class="social-item">
+                        <a href="https://www.linkedin.com/in/suhith-reddy-973844291/" class="social-link" target="_blank" rel="noopener noreferrer">
+                            <ion-icon name="logo-linkedin"></ion-icon>
+                        </a>
+                    </li>
+                    <li class="social-item">
+                        <a href="https://github.com/ParvathareddySuhith" class="social-link" target="_blank" rel="noopener noreferrer">
+                            <ion-icon name="logo-github"></ion-icon>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+
+        <!--
+        - #MAIN CONTENT
+        -->
+        <div class="main-content">
+            <!-- Navbar -->
+            <nav class="navbar">
+                <ul class="navbar-list">
+                    <li class="navbar-item">
+                        <button class="navbar-link active" data-nav-link="about">About</button>
+                    </li>
+                    <li class="navbar-item">
+                        <button class="navbar-link" data-nav-link="resume">Resume</button>
+                    </li>
+                    <li class="navbar-item">
+                        <button class="navbar-link" data-nav-link="portfolio">Portfolio</button>
+                    </li>
+                    <li class="navbar-item">
+                        <button class="navbar-link" data-nav-link="contact">Contact</button>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- About -->
+            <article class="about active" data-page="about">
+                <header>
+                    <h2 class="h2 article-title">About Me</h2>
+                </header>
+                <section class="about-text">
+                    <p>
+                        I’m an enthusiastic and curious learner with a strong interest in technology, especially in areas like artificial intelligence, data science, and real-time systems. I enjoy solving practical problems through coding and system design, and I'm currently working on projects that integrate AI with real-world applications, such as crowd monitoring and safety systems.
+                    </p>
+                    <p>
+                        I'm passionate about building tools that can make environments safer, smarter, and more efficient. Beyond tech, I value continuous learning and enjoy collaborating with others to bring innovative ideas to life. I’ve completed foundational courses and certifications in machine learning, cloud computing, and Python programming, which have strengthened my ability to work across both software and hardware.
+                    </p>
+                </section>
+                <section class="service">
+                    <h3 class="h3 service-title">What I'm Doing</h3>
+                    <ul class="service-list">
+                        <li class="service-item">
+                            <div class="service-icon-box">
+                                <ion-icon name="sparkles-outline"></ion-icon>
+                            </div>
+                            <div class="service-content-box">
+                                <h4 class="h4 service-item-title">AI-Powered System Development</h4>
+                                <p class="service-item-text">
+                                    Designing and deploying intelligent systems using machine learning and deep learning for real-world applications.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="service-item">
+                            <div class="service-icon-box">
+                                <ion-icon name="camera-outline"></ion-icon>
+                            </div>
+                            <div class="service-content-box">
+                                <h4 class="h4 service-item-title">Computer Vision Solutions</h4>
+                                <p class="service-item-text">
+                                    Implementing object detection, tracking, and density estimation using models like YOLO and CSRNet.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="service-item">
+                            <div class="service-icon-box">
+                                <ion-icon name="hardware-chip-outline"></ion-icon>
+                            </div>
+                            <div class="service-content-box">
+                                <h4 class="h4 service-item-title">Edge AI Deployment</h4>
+                                <p class="service-item-text">
+                                    Optimizing and running AI models on devices like Raspberry Pi and Jetson Nano for low-latency, offline use.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="service-item">
+                            <div class="service-icon-box">
+                                <ion-icon name="build-outline"></ion-icon>
+                            </div>
+                            <div class="service-content-box">
+                                <h4 class="h4 service-item-title">Embedded System Integration</h4>
+                                <p class="service-item-text">
+                                    Building and integrating real-time embedded solutions with sensors and microcontrollers for smart environments.
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+            </article>
+
+            <!-- Resume -->
+            <article class="resume" data-page="resume">
+                <header>
+                    <h2 class="h2 article-title">Resume</h2>
+                </header>
+                <section class="timeline">
+                    <div class="title-wrapper">
+                        <div class="icon-box">
+                            <ion-icon name="book-outline"></ion-icon>
+                        </div>
+                        <h3 class="h3">Education</h3>
+                    </div>
+                    <ol class="timeline-list">
+                        <li class="timeline-item">
+                            <h4 class="h4 timeline-item-title">Chennai Institute Of Technology</h4>
+                            <span>B.E / CSE, 2023 — 2027</span>
+                            <p class="timeline-text">
+                                Pursuing a Bachelor of Engineering in Computer Science and Engineering.
+                            </p>
+                        </li>
+                    </ol>
+                </section>
+                <section class="timeline">
+                    <div class="title-wrapper">
+                        <div class="icon-box">
+                            <ion-icon name="briefcase-outline"></ion-icon>
+                        </div>
+                        <h3 class="h3">Experience</h3>
+                    </div>
+                    <ol class="timeline-list">
+                        <li class="timeline-item">
+                            <h4 class="h4 timeline-item-title">Research Intern at Chennai Institute of Technology</h4>
+                            <span>2024 (2-month duration)</span>
+                            <p class="timeline-text">
+                                Worked on real-time crowd density estimation and stampede prevention using AI models like YOLO and CSRNet; contributed to developing a smart monitoring and alert system.
+                            </p>
+                        </li>
+                        <li class="timeline-item">
+                            <h4 class="h4 timeline-item-title">Intern – Networking & Cybersecurity at Cisco</h4>
+                            <span>2023</span>
+                            <p class="timeline-text">
+                                Gained hands-on experience in networking and cybersecurity through real-world projects; collaborated with professionals to build practical solutions.
+                            </p>
+                        </li>
+                    </ol>
+                </section>
+                <section class="skill">
+                    <h3 class="h3 skills-title">My Skills</h3>
+                    <ul class="skills-list">
+                        <li class="skill-item">
+                            <div class="skill-circle-container" data-percent="85">
+                                <svg width="100" height="100" viewBox="0 0 100 100">
+                                    <circle class="skill-circle-bg" cx="50" cy="50" r="42"></circle>
+                                    <circle class="skill-circle-progress" cx="50" cy="50" r="42"></circle>
+                                </svg>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <h5 class="h5">Python</h5>
+                        </li>
+                        <li class="skill-item">
+                            <div class="skill-circle-container" data-percent="80">
+                                <svg width="100" height="100" viewBox="0 0 100 100">
+                                    <circle class="skill-circle-bg" cx="50" cy="50" r="42"></circle>
+                                    <circle class="skill-circle-progress" cx="50" cy="50" r="42"></circle>
+                                </svg>
+                                <span class="skill-percentage">80%</span>
+                            </div>
+                            <h5 class="h5">C++</h5>
+                        </li>
+                        <li class="skill-item">
+                             <div class="skill-circle-container" data-percent="75">
+                                <svg width="100" height="100" viewBox="0 0 100 100">
+                                    <circle class="skill-circle-bg" cx="50" cy="50" r="42"></circle>
+                                    <circle class="skill-circle-progress" cx="50" cy="50" r="42"></circle>
+                                </svg>
+                                <span class="skill-percentage">75%</span>
+                            </div>
+                            <h5 class="h5">Java</h5>
+                        </li>
+                        <li class="skill-item">
+                             <div class="skill-circle-container" data-percent="70">
+                                <svg width="100" height="100" viewBox="0 0 100 100">
+                                    <circle class="skill-circle-bg" cx="50" cy="50" r="42"></circle>
+                                    <circle class="skill-circle-progress" cx="50" cy="50" r="42"></circle>
+                                </svg>
+                                <span class="skill-percentage">70%</span>
+                            </div>
+                            <h5 class="h5">JavaScript</h5>
+                        </li>
+                         <li class="skill-item">
+                             <div class="skill-circle-container" data-percent="70">
+                                <svg width="100" height="100" viewBox="0 0 100 100">
+                                    <circle class="skill-circle-bg" cx="50" cy="50" r="42"></circle>
+                                    <circle class="skill-circle-progress" cx="50" cy="50" r="42"></circle>
+                                </svg>
+                                <span class="skill-percentage">70%</span>
+                            </div>
+                            <h5 class="h5">MySQL</h5>
+                        </li>
+                    </ul>
+                </section>
+            </article>
+
+            <!-- Portfolio -->
+            <article class="portfolio" data-page="portfolio">
+                <header>
+                    <h2 class="h2 article-title">Portfolio</h2>
+                </header>
+                <section class="projects">
+                    <ul class="filter-list">
+                        <li class="filter-item">
+                            <button class="active" data-filter-btn>All</button>
+                        </li>
+                        <li class="filter-item">
+                            <button data-filter-btn>AI/ML</button>
+                        </li>
+                        <li class="filter-item">
+                            <button data-filter-btn>Embedded</button>
+                        </li>
+                        <li class="filter-item">
+                            <button data-filter-btn>Cybersecurity</button>
+                        </li>
+                    </ul>
+                    <ul class="project-list">
+                        <li class="project-item active" data-filter-item data-category="ai/ml embedded">
+                            <a href="#">
+                                <figure class="project-img">
+                                    <img src="https://placehold.co/400x300/3d52d5/FFFFFF?text=Stampede+Prevention" alt="Real-Time Stampede Prevention System" loading="lazy">
+                                </figure>
+                                <div class="project-content">
+                                    <p class="project-category">AI/ML, Embedded</p>
+                                    <h3 class="h4 project-title">Real-Time Stampede Prevention System</h3>
+                                    <p class="project-description">
+                                        Leverages YOLOv8 for person detection and CSRNet for accurate crowd density estimation. Designed for deployment on edge devices like Raspberry Pi and Jetson Nano.
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="project-item active" data-filter-item data-category="ai/ml">
+                            <a href="#">
+                                <figure class="project-img">
+                                    <img src="https://placehold.co/400x300/00aaff/FFFFFF?text=Face+Mask+Detection" alt="Face Mask Detection Using Deep Learning" loading="lazy">
+                                </figure>
+                                <div class="project-content">
+                                    <p class="project-category">AI/ML</p>
+                                    <h3 class="h4 project-title">Face Mask Detection Using Deep Learning</h3>
+                                    <p class="project-description">
+                                       Developed a CNN model using TensorFlow and OpenCV to detect face mask usage in real-time with high accuracy on public and custom datasets.
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="project-item active" data-filter-item data-category="cybersecurity">
+                            <a href="#">
+                                <figure class="project-img">
+                                    <img src="https://placehold.co/400x300/f0a500/333333?text=Networking+Security" alt="Networking & Cybersecurity Projects" loading="lazy">
+                                </figure>
+                                <div class="project-content">
+                                    <p class="project-category">Cybersecurity</p>
+                                    <h3 class="h4 project-title">Networking & Cybersecurity Projects</h3>
+                                    <p class="project-description">
+                                       Practical solutions and hands-on experience gained through real-world projects during the Cisco Online Internship.
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+            </article>
+
+            <!-- Contact -->
+            <article class="contact" data-page="contact">
+                <header>
+                    <h2 class="h2 article-title">Contact</h2>
+                </header>
+                <section class="mapbox" data-mapbox>
+                    <figure>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d124408.56382994975!2d80.12604818464162!3d13.047477169055815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5265ea4f7d3361%3A0x6e61a70b6863d432!2sChennai%2C%20Tamil%20Nadu%2C%20India!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus" width="400" height="300" loading="lazy"></iframe>
+                    </figure>
+                </section>
+                <section class="contact-form">
+                    <h3 class="h3 form-title">Get in Touch</h3>
+                    <form action="#" class="form" data-form>
+                        <div class="input-wrapper">
+                            <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+                            <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+                        </div>
+                        <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+                        <button class="form-btn" type="submit" disabled data-form-btn>
+                            <ion-icon name="paper-plane"></ion-icon>
+                            <span>Send Message</span>
+                        </button>
+                    </form>
+                </section>
+            </article>
+        </div>
+    </main>
+
+    <!-- CDN for Three.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    
+    <!-- CDN for Ionicons -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <!-- External JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
